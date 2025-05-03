@@ -20,10 +20,13 @@ npm i -D svelte-github-corners
 
 ```svelte
 <script>
-	import { GitHubCorners } from 'svelte-github-corners';
+  import { GitHubCorners } from 'svelte-github-corners';
 </script>
 
-<GitHubCorners position="top-right" href="https://github.com/GreenestGoat/svelte-github-corners" />
+<GitHubCorners 
+  position="top-right"
+  href="https://github.com/GreenestGoat/svelte-github-corners" 
+/>
 ```
 
 ## Svelte Props
