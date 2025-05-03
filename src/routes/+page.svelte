@@ -1,5 +1,5 @@
 <script>
-	import { GitHubCorners } from '$lib/index.js';
+	import { GitHubCorners } from 'svelte-github-corners';
 </script>
 
 <GitHubCorners position="top-right" href="https://github.com/GreenestGoat/svelte-github-corners" />
