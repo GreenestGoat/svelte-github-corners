@@ -38,6 +38,7 @@ npm i -D svelte-github-corners
 | bgColor       | String | `#151513`                                           | The background color of the corner.  |
 | color         | String | `#fff`                                              | The Github logo color of the corner. |
 | position      | String | `top-left`/`top-right`/`bottom-left`/`bottom-right` | The position of corner.              |
+| target      | String | `_blank` |	Where to open the link.          |
 
 ## Development
 
