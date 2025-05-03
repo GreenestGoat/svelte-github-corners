@@ -1,0 +1,88 @@
+{
+	"name": "svelte-github-corners",
+	"version": "0.0.1",
+	"description": "GitHub Corners for Svelte",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GreenestGoat/svelte-github-corners.git"
+	},
+	"bugs": {
+		"url": "https://github.com/GreenestGoat/svelte-github-corners/issues"
+	},
+	"homepage": "https://github.com/GreenestGoat/svelte-github-corners",
+	"author": {
+		"name": "GreenestGoat",
+		"url": "https://github.com/GreenestGoat"
+	},
+	"license": "MIT",
+	"private": false,
+	"keywords": [
+		"svelte",
+		"github",
+		"corners",
+		"svg"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build && npm run prepack",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"prepack": "svelte-kit sync && svelte-package && publint",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"lint": "prettier --check . && eslint .",
+		"test:unit": "vitest",
+		"test": "npm run test:unit -- --run && npm run test:e2e",
+		"test:e2e": "playwright test"
+	},
+	"files": [
+		"dist",
+		"!dist/**/*.test.*",
+		"!dist/**/*.spec.*"
+	],
+	"sideEffects": [
+		"**/*.css"
+	],
+	"main": "./dist/index.js",
+	"svelte": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js"
+		}
+	},
+	"peerDependencies": {
+		"svelte": "^5.0.0"
+	},
+	"devDependencies": {
+		"@eslint/compat": "^1.2.9",
+		"@eslint/js": "^9.26.0",
+		"@playwright/test": "^1.52.0",
+		"@sveltejs/adapter-auto": "^6.0.0",
+		"@sveltejs/kit": "^2.20.8",
+		"@sveltejs/package": "^2.3.11",
+		"@sveltejs/vite-plugin-svelte": "^5.0.3",
+		"@testing-library/jest-dom": "^6.6.3",
+		"@testing-library/svelte": "^5.2.7",
+		"eslint": "^9.26.0",
+		"eslint-config-prettier": "^10.1.2",
+		"eslint-plugin-svelte": "^3.5.1",
+		"globals": "^16.0.0",
+		"jsdom": "^26.1.0",
+		"prettier": "^3.5.3",
+		"prettier-plugin-svelte": "^3.3.3",
+		"publint": "^0.3.12",
+		"svelte": "^5.28.2",
+		"svelte-check": "^4.1.7",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.31.1",
+		"vite": "^6.3.4",
+		"vitest": "^3.1.2"
+	}
+}
