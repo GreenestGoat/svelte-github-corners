@@ -1,6 +1,6 @@
 # svelte-github-corners
 
-[![NPM Downloads](https://img.shields.io/npm/dm/svelte-github-corners.svg?style=flat)](https://www.npmjs.com/package/@uiw/react-github-corners)
+[![NPM Downloads](https://img.shields.io/npm/dm/svelte-github-corners.svg?style=flat)](https://www.npmjs.com/package/svelte-github-corners)
 [![npm version](https://img.shields.io/npm/v/svelte-github-corners.svg)](https://www.npmjs.com/package/svelte-github-corners)
 [![MIT License](https://img.shields.io/github/license/GreenestGoat/svelte-github-corners.svg?color=red)](https://github.com/GreenestGoat/svelte-github-corners/blob/main/LICENSE)
 
