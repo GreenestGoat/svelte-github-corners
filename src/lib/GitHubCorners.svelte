@@ -16,7 +16,7 @@
 		color = '#fff',
 		bgColor = '#151513',
 		...restProps
-	}:Props = $props();
+	}: Props = $props();
 
 	let pos = $derived(
 		{
